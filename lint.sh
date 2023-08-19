@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt-get install python3-dev default-libmysqlclient-dev build-essential
+
 # Run flake8 over the student source and generate a log report
 python3 -m venv ".venv/$INPUT_PR_NUMBER" --system-site-packages
 source ".venv/$INPUT_PR_NUMBER/bin/activate"
